@@ -1,0 +1,36 @@
+body 
+{
+    background-image:url(https://pbs.twimg.com/profile_images/1606106569/Pig_Cartoon_Clipart_432.jpg);
+    background-repeat:no-repeat;
+    background-size:30%;
+    background-position:right;
+    background-color:black;
+    
+}
+
+h1
+{
+    color:red;
+    text-align:center;
+    left:100px;
+    right:100px;
+    font-size:3em;
+    font-weight:bold;
+    font-variant:small-caps;
+}
+
+h2
+{
+    color:red;
+    text-align:center;
+}
+
+p
+{
+    color:red;
+    font-size:1.3em;
+    position:absolute;
+    left:800px;
+    right:800px;
+    
+}
