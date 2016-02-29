@@ -25,12 +25,43 @@ h2
     text-align:center;
 }
 
-p
+p1
 {
     color:red;
     font-size:1.3em;
     position:absolute;
     left:800px;
     right:800px;
-    
+    top:400px
 }
+
+p2
+{
+    color:red;
+    font-size:1.3em;
+    position:absolute;
+    left:800px;
+    right:800px;
+    top:800px
+}
+
+p3
+{
+    color:red;
+    font-size:1.3em;
+    position:absolute;
+    left:800px;
+    right:800px;
+    top:1200px
+}
+
+form
+{
+    position:relative;
+    top:300px;
+    font-size:1.5em;
+    font-variant:small-caps;
+    color:red;
+}
+
+
