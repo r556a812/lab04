@@ -25,7 +25,7 @@
         
 	echo("Your order has been processed.<br><br>Username: ".$name."<br>Password: ".$pswrd."<br><br><br><br>");
 	
-	echo "<table border='2'>";
+	echo "<table border='10' align='center' style='width:100%'>";
 			
 
 			echo "<tr>";
