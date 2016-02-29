@@ -8,6 +8,8 @@
     <link href="customerFrontendStyle.css"
 	rel="stylesheet"
 	type="text/css"/>
+	
+    <script src="formChecker.js"></script>
  
 </head> 
 
@@ -16,7 +18,7 @@
 <body> 
     <h2 style="position: absolute; left:250px; right:250px;">Do you love bacon and just can't seem to get enough of it? Well you have come to the right place! Here you will find all the things you need to fulfill your bacon urges and show everyone how much you really love BACON!</h2>
     <p1>Are you tired of having to wait to brush your teeth in the morning before you can enjoy your delicous breakfast full of bacon?? Well you're just in luck! Introducing our Bacon-flavored Toothpaste.  Here you can enjoy all the flavor bacon has to provide as soon as you wake up.</p1>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <img src="http://www.bizarbin.com/wp-content/uploads/2013/10/bacon-toothpaste.jpg" width="600" height="300">
     <p2>Have you ever had chapped lips and thought, man I bet some bacon grease would help out so much right now?  Well introducing our newest product, Bacon Balm!  Now everytime your lips get chapped you can spread on some of this greatness and heal it right up. <br><u><b>Other uses:</b></u> You miss the taste of bacon? Just put it on.</p2>
     <br><br><br><br><br><br><br>
@@ -26,17 +28,24 @@
     <img src="http://assets.nydailynews.com/polopoly_fs/1.46704.1333048922!/img/httpImage/image.jpg_gen/derivatives/gallery_1200/bacon-mints.jpg" width="600" height="300">
     
    
-   <form action="quiz.php" method="post" id="quiz">
+   <form action="customerBackend.php" method="post" id="info">
+        Username:<br>
+        <input type="text" id="username" name="username"><br>
+        Password:<br>
+        <input type="text" id="password" name="password"><br><br><br>
         Toothpaste ($5 each):<br>
         <input type="number" name="toothpaste" min="0" value="0"><br><br><br>
         Lip Balm ($3 each):<br>
-        <input type="number" name="lip balm" min="0" value="0"><br><br><br>
+        <input type="number" name="balm" min="0" value="0"><br><br><br>
         Breath Mints ($8 each):<br>
         <input type="number" name="mints" min="0" value="0"><br><br><br>
         Shipping:<br>
-        <input type="radio" name="shipping" value="Free"> Free 7 day <br>
-        <input type="radio" name="shipping" value="Night"> $50.00 over night <br>
-        <input type="radio" name="shipping" value="Three"> $5.00 three day <br>
+        <input type="radio" name="shipping" value="0" checked> Free 7 day <br>
+        <input type="radio" name="shipping" value="50"> $50.00 over night <br>
+        <input type="radio" name="shipping" value="5"> $5.00 three day <br><br>
+        
+        <input type="submit" onclick="validate()" value="Submit">
+        <input type="button" onclick="startOver()" value="Reset">
     </form>
     
     
